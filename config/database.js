@@ -1,9 +1,9 @@
 import { Sequelize } from "sequelize";
  
-const db = new Sequelize('iims', 'root', '', {
-    host: "127.0.0.1",
-    port: "3306",
-    dialect: "mysql"
+const db = new Sequelize('DB_NAME', 'SERVER_USER', 'SERVER_PASSEORD', {
+    host: "SERVER",
+    port: "SERVER_PORT",
+    dialect: "SERVER_TYPE"
 });
  
 export default db;
